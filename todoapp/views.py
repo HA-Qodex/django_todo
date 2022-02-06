@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import *
 
 
-def home(request):
+def create(request):
     data_list = TODOModel.objects.all().order_by("-id")
     if request.method == 'POST':
         form = TODOForm(request.POST or None)

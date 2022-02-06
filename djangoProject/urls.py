@@ -19,7 +19,7 @@ from todoapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', create),
     path('delete-<int:id>', delete),
     path('update-<int:id>', update),
 ]
